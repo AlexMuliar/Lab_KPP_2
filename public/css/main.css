@@ -1,0 +1,55 @@
+body{
+	font-size: 18px;
+	font-family: "Arial", sans-serif;
+}
+.container{
+	max-width: 200px;
+	margin: 20px auto;
+	width: 100%;
+	text-align: center;
+}
+.title{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.app__list{
+	text-align: left;
+	padding: 0;
+}
+.app__list-item{
+	display: flex;
+	justify-content: space-between;
+	
+	max-width: 500;
+}
+.app__list-text{
+	word-break: break-all;
+}
+.app__list-item.complete{
+	background-color: rgb(69, 199, 69);
+	text-decoration: line-through;
+}
+.app__list-remove{
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	margin-right: 5px;
+	background: url("../img/cross.svg") no-repeat;
+}
+.app__list-remove::after,
+.app__list-remove::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+}
+.edit-icon{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+	margin-left: auto;
+	background: url("../img/contract.svg") no-repeat;
+}
